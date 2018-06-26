@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+  <h1>Task: </h1>
+  <h2> <%= @task.title %> </h2>
+  <p> <%= @task.details %> </p>
+  <%= link_to "Mark as done", done_path, class: "link-to-task" %>
+  <%= link_to "Update this task", edit_path, class: "link-to-task" %>
+  <%= link_to "Delete this task", delete_path %>
+
+  <%= link_to "Return to your ToDo list", tasks_path, class: "btn btn-success" %>
+
+</body>
+</html>
